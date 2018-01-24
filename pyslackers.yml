@@ -1,0 +1,11 @@
+---
+
+- name: PostgreSQL
+  hosts:
+    - pg.pyslackers.com
+  tags:
+    - postgres
+  roles:
+    - pyslackers.common
+    - pyslackers.provider
+    - pyslackers.postgres

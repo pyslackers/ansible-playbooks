@@ -1,0 +1,12 @@
+[submodule "roles/pyslackers.common"]
+	path = roles/pyslackers.common
+	url = https://github.com/pyslackers/ansible-role-common.git
+	branch = master
+[submodule "roles/pyslackers.postgres"]
+	path = roles/pyslackers.postgres
+	url = https://github.com/pyslackers/ansible-role-postgres.git
+	branch = master
+[submodule "roles/pyslackers.provider"]
+	path = roles/pyslackers.provider
+	url = https://github.com/pyslackers/ansible-role-provider.git
+	branch = master

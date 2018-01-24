@@ -1,0 +1,11 @@
+---
+
+- name: Test
+  hosts:
+    - localhost
+  vars:
+    travis: True
+  roles:
+    - pyslackers.common
+    - pyslackers.provider
+    - pyslackers.postgres
