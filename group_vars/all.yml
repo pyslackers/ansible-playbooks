@@ -1,0 +1,14 @@
+---
+
+ansible_python_interpreter: /usr/bin/python3
+provider: 'digital-ocean'
+
+apt_upgrade: true
+github_users:
+  - ovv
+  - mrasband
+  - mikefromit
+  - seanson
+
+ssh_keys:
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDlSjOwoQfjLd3h7wHfriRdyJ7HkKldiB6FaqvCdsjOIzUQi+VceY8T3OK20D2QL423xHpTox7C3xneR05WUnwqSj2m84GXrE3XxUHaifCCoCsdCvDKGdoekSXsUPi9dpjltAEBuVUhUOPmRF+ZXdDLpfAO5MFslolvZ9BwPucJI4neA7/9+Lpweu5R9z1ZHO0uKBv9le1OrQ5h8XJyKya0iW6TFJ8bMXGXO9q6TzlNgNMQSK0cpU2WWiDeWRagrsHadFuHGLRaX560CFdxsBjqGZ73gfHmG+eP+OOLObVBHnjNELdQPkF/e9dJ4dv0cPT5aN5pGDEc5p1m4L2cZiEITuAS4KP79NDw1BEV6zvf+I8/2XD/LLE0LyuE2R255tkfJxU4G30lRDfR6+y9lhMSq+m+FKm5MnkePA6TBXg+aoJSRKxweUwC9X4DYunCmMQFVT2b8cruQxAR5Onam0PexTnzCuqqqavNEii6bcOyymSMe6qC7CJGfZHQkpOGNg2L8iEANe2CjwM6Daa3G0vO8Y+dLHFgebCCQpfo9Mf2AudfvdJKTh/iWRhQ6tnfiV2v53XQZgRycps+n7uQRtPduT9/ZUwUU1e1dg79UQKIKEqb4gLuvaFfGrImwjsevjNdP+2zVVSpBU7YiU/8pBD25KxG3iZo26AFawuX53IEyQ== pythondev.slack@gmail.com
