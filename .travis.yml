@@ -1,9 +1,13 @@
 services: docker
+language: python
 
 env:
   - distro=debian8
   - distro=debian9
   - distro=ubuntu1604
+
+python:
+  - '3.6'
 
 install:
   - export container_id=$(date +%s)
