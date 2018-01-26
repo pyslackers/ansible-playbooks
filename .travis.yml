@@ -12,7 +12,6 @@ python:
 install:
   - export container_id=$(date +%s)
   - idempotence=$(mktemp)
-  - cp ansible.cfg ansible.cfg.bak
   - "printf '[defaults]\nroles_path = ../' > ansible.cfg"
 
   # Build and run docker container
@@ -34,9 +33,6 @@ script:
   - tail $idempotence | grep -q 'changed=0.*failed=0' && (printf 'Idempotence test pass') || (printf 'Idempotence test fail' && exit 1)
 
   - docker exec --tty ${container_id} env TERM=xterm cat /var/log/postgresql/postgresql-10-main.log
-
-before_deploy:
-  - mv ansible.cfg.bak ansible.cfg
 
 deploy:
   provider: script
