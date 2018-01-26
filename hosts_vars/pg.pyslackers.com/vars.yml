@@ -5,4 +5,4 @@ postgres_extra_packages:
   - pgtop
 
 postgres_clients:
-  - {db: sirbot, user: sirbot, address: 10.132.119.69,}
+  - {db: sirbot, user: sirbot, address: 10.132.119.69}

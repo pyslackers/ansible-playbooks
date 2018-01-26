@@ -5,6 +5,21 @@
     - localhost
   vars:
     travis: True
+    apt_upgrade: true
+    github_users:
+      - ovv
+      - mrasband
+      - mikefromit
+      - seanson
+    postgres_extra_packages:
+      - pgtop
+    postgres_clients:
+      - {db: sirbot, user: sirbot, address: 10.132.119.69}
+    postgres_users:
+      sirbot:
+        password: foobarbaz
+        privileges:
+          - {type: database, privileges: ['CREATE']}
   roles:
     - pyslackers.common
     - pyslackers.provider
