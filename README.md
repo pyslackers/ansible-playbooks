@@ -14,10 +14,22 @@ printf 'supersecurepassword' > .pass
 Update
 ------
 
+Synchronize the repository and submodules:
+
 ```bash
 git checkout master
 git pull origin master
 git submodule update
+```
+
+Update the submodules to the tip of their master branch:
+
+```bash
+git checkout -b update-submodules
+git submodule update --recursive --remote
+git add .
+git commit -m 'update submodule'
+git push origin update-submodules
 ```
 
 Run
