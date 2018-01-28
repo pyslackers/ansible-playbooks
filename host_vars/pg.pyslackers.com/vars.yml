@@ -6,3 +6,4 @@ postgres_extra_packages:
 
 postgres_clients:
   - {db: sirbot, user: sirbot, address: 10.132.119.69/32}
+  - {db: pyslackersweb, user: pyslackersweb, address: 10.132.54.169/32}
