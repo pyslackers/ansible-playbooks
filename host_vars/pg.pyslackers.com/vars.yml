@@ -1,6 +1,6 @@
 ---
 
-postgres_listen_address: '10.132.14.83'
+postgres_listen_address: 'localhost,10.132.14.83'
 postgres_extra_packages:
   - pgtop
 
